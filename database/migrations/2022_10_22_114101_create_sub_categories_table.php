@@ -18,8 +18,8 @@ class CreateSubCategoriesTable extends Migration
             $table->string('subcat_name');
             $table->bigInteger('cat_id');
             $table->text('description')->nullable();
-            $table->text('image')->nullable();
-            $table->tinyInteger('status')->default(0);
+            $table->string('image')->nullable();
+            $table->tinyInteger('status')->nullable()->default(0);
             $table->timestamps();
         });
     }

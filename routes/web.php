@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\SubCategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -13,6 +15,10 @@ use App\Http\Controllers\HomeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['prefix' => 'admin'], function(){
+    Route::resource('category',CategoryController::class);
+    Route::resource('sub_category',SubCategoryController::class);
+});
 
 Route::get('/home', [HomeController::class,'index']);
 

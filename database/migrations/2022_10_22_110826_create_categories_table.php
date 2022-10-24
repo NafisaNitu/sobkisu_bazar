@@ -17,8 +17,8 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string('category_name');
             $table->text('description')->nullable();
-            $table->text('image')->nullabale();
-            $table->tinyInteger('status')->default(0);
+            $table->string('image')->nullabale();
+            $table->tinyInteger('status')->nullable()->default(0);
             $table->timestamps();
         });
     }
