@@ -7,6 +7,8 @@ use App\Helpers\SubCategory\SubCategory;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SubCategoryController;
 use App\Interfaces\CrudInterface;
+use App\Models\Category as ModelsCategory;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -34,6 +36,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+       
+        View::composer('*', function($view){
+           $view->with('categories', ModelsCategory::all());
+        });
     }
 }

@@ -38,8 +38,7 @@ class SubCategoryController extends Controller
      */
     public function create()
     {
-        $categories = Category::all();
-        return view('backend.pages.sub_category.create',compact('categories'));
+        return view('backend.pages.sub_category.create');
     }
 
     /**
@@ -83,9 +82,9 @@ class SubCategoryController extends Controller
      */
     public function edit($id)
     {
-        $categories = Category::all();
+        
         $subCategory = $this->crudInterface->findById($id);
-        return view('backend.pages.sub_category.edit', compact('subCategory','categories'));
+        return view('backend.pages.sub_category.edit', compact('subCategory'));
     }
 
     /**
