@@ -7,6 +7,26 @@
 
     }
 
+    /*Custom Css Style section*/
+
+    .border-soft-secondary {
+        {{--  background-color: #EE3567;  --}}
+    }
+    .header-top-bg{
+        background-color: #562E87;
+    }
+    .under-header-bg{
+        {{--  background-color:#EE3567 !important;  --}}
+    }
+    .search-bg{
+        background-color: #f1f1f1 !important;
+        border-color: #ccc !important;
+    }
+
+
+
+    /*End style*/
+
     .bannar2 {
 
         width: 100%;
@@ -263,9 +283,9 @@
         rel="stylesheet">
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="https://sobkisubazar.com/public/assets/css/vendors.css">
-    <link rel="stylesheet" href="https://sobkisubazar.com/public/assets/css/aiz-core.css">
-    <link rel="stylesheet" href="https://sobkisubazar.com/public/assets/css/custom-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="{{ asset('admin-assets/css/vendors.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin-assets/css/aiz-core.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin-assets/css/custom-style.css') }}">
 
     <script src="https://sobkisubazar.com/public/assets/js/jquryui.js"></script>
     <script>
@@ -345,11 +365,11 @@
         <!-- Header -->
         <!-- Top Bar -->
         <div class="top-navbar  border-bottom border-soft-secondary z-1035">
-            <div class="container">
+            <div class="container header-top-bg">
                 <div class="row">
                     <div class="col-lg-7 col-12">
-                        <ul class="list-inline d-flex justify-content-between justify-content-lg-start mb-0">
-                            <li class="list-inline-item dropdown mr-1" id="lang-change">
+                        <ul class="list-inline d-flex justify-content-between justify-content-lg-start mb-0 text-white">
+                            {{--  <li class="list-inline-item dropdown mr-1 text-white" id="lang-change">
                                 <a href="javascript:void(0)" class="dropdown-toggle text-reset py-2"
                                     data-toggle="dropdown" data-display="static">
                                     <img src="https://sobkisubazar.com/public/assets/img/placeholder.jpg"
@@ -382,7 +402,7 @@
                                             <span class="language">Arabic</span>
                                         </a>
                                     </li>
-                                    <li>
+                                     <li>
                                         <a href="javascript:void(0)" data-flag="es" class="dropdown-item ">
                                             <img src="https://sobkisubazar.com/public/assets/img/placeholder.jpg"
                                                 data-src="https://sobkisubazar.com/public/assets/img/flags/es.png"
@@ -391,9 +411,9 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>  --}}
 
-                            <li class="list-inline-item dropdown ml-auto ml-lg-0 mr-1" id="currency-change">
+                            {{--  <li class="list-inline-item dropdown ml-auto ml-lg-0 mr-1" id="currency-change">
                                 <a href="javascript:void(0)" class="dropdown-toggle text-reset py-2 opacity-60"
                                     data-toggle="dropdown" data-display="static">
                                     Taka ৳
@@ -412,12 +432,29 @@
                                             data-currency="Rupee">Indian Rupee (Rs)</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
-                                <a href="tel:+8801325-319106" class="text-reset d-inline-block opacity-60 py-2">
-                                    <i class="la la-phone"></i>
+                            </li>  --}}
+                            <li class="list-inline-item mr-3 border-left-0 pr-3 pl-0">
+                                <a href="tel:+8801325-319106" class="text-reset d-inline-block opacity-80 py-2">
+                                    {{--  <i class="la la-phone"></i>  --}}
+                                    <i class="fa-solid fa-phone text-white"></i>
 
                                     <span>+8801325-319106</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-3 border-left-0 pr-3 pl-0">
+                                <a href="tel:+8801325-319106" class="text-reset d-inline-block opacity-80 py-2">
+                                    {{--  <i class="la la-phone"></i>  --}}
+                                    <i class="fa-solid fa-phone text-white"></i>
+
+                                    <span>+8801325-319106</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-3 border-left-0 pr-3 pl-0">
+                                <a href="tel:+8801325-319106" class="text-reset d-inline-block opacity-80 py-2">
+                                    {{--  <i class="la la-phone"></i>  --}}
+                                    <i class="fa-regular fa-envelope"></i>
+
+                                    <span>Send Email</span>
                                 </a>
                             </li>
 
@@ -427,7 +464,7 @@
                     </div>
 
                     <div class="col-5 text-right d-none d-lg-block">
-                        <ul class="list-inline mb-0 h-100 d-flex justify-content-end align-items-center">
+                        <ul class="list-inline mb-0 h-100 d-flex justify-content-end align-items-center text-white">
                             <!---->
                             <!--    <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">-->
                             <!--        <a href="tel:+8801325-319106" class="text-reset d-inline-block opacity-60 py-2">-->
@@ -439,11 +476,11 @@
                             <!---->
                             <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
                                 <a href="https://sobkisubazar.com/admin"
-                                    class="text-reset d-inline-block opacity-60 py-2">My Panel</a>
+                                    class="text-reset d-inline-block opacity-80 py-2">My Panel</a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://sobkisubazar.com/logout"
-                                    class="text-reset d-inline-block opacity-60 py-2">Logout</a>
+                                    class="text-reset d-inline-block opacity-80 py-2">Logout</a>
                             </li>
                         </ul>
                     </div>
@@ -452,9 +489,10 @@
         </div>
         <!-- END Top Bar -->
         <header class=" sticky-top  z-1020 bg-white border-bottom shadow-sm">
-            <div class="position-relative logo-bar-area z-1 " style="background-color:#149777 !important">
+            {{--  <div class="position-relative logo-bar-area z-1 style="background-color:#149777 !important">  --}}
+                <div class="position-relative logo-bar-area z-1 ">
                 <!--bg-white-->
-                <div class="container">
+                <div class="container under-header-bg">
                     <div class="d-flex align-items-center">
 
                         <div class="col-auto col-xl-3 pl-0 pr-3 d-flex align-items-center">
@@ -472,8 +510,9 @@
                             </a>
                         </div>
 
-                        <div class="flex-grow-1 front-header-search d-flex align-items-center "
-                            style="background-color:#149777">
+                        <div class="flex-grow-1 front-header-search d-flex align-items-center ">
+                            {{--  <div class="flex-grow-1 front-header-search d-flex align-items-center "
+                            style="background-color:#149777">  --}}
                             <div class="position-relative flex-grow-1">
                                 <form action="https://sobkisubazar.com/search" method="GET"
                                     class="stop-propagation">
@@ -484,14 +523,15 @@
                                                     class="la la-2x la-long-arrow-left"></i></button>
                                         </div>
                                         <div class="input-group">
-                                            <input type="text" class="border-0 border-lg form-control"
+                                            <input type="text" class="border-0 border-lg form-control search-bg"
                                                 id="search" name="keyword" placeholder="I am shopping for..."
                                                 autocomplete="off">
                                             <div class="input-group-append d-none d-lg-block">
                                                 <button class="btn btn-primary" type="submit"
-                                                    style="background-color:#F16722 !important;border-color:#F16722 !important;">
+                                                    style="background-color:#EE3567 !important;border-color:#F16722 !important;">
                                                     <i style="line-height:20px !important;"
-                                                        class="la la-search la-flip-horizontal fs-18"></i>
+                                                        class="fa-solid fa-magnifying-glass fs-18"></i>
+                                                        {{--  <i class="fa-solid fa-magnifying-glass"></i>  --}}
                                                 </button>
                                             </div>
                                         </div>
@@ -528,10 +568,12 @@
                             <div class="" id="compare">
                                 <a href="https://sobkisubazar.com/compare"
                                     class="d-flex align-items-center text-reset">
-                                    <i class="la la-refresh la-2x opacity-80 text-white"></i>
+                                    {{--  <i class="la la-refresh la-2x opacity-80"></i>  --}}
+                                    <i class="fa-solid fa-arrows-rotate opacity-50 fa-2x under-header-icon" style="color: #000 !important;"></i>
+                                    {{--  <i class="fa-solid fa-arrows-rotate  under-header-icon" style="background: #EE3567 !important; border-radius: 50%; text-align: center; display: flex; justify-content: center; align-items : center; height: 40px; width: 40px"></i>  --}}
                                     <span class="flex-grow-1 ml-1">
                                         <span class="badge badge-primary badge-inline badge-pill "
-                                            style="background-color:#F16722 ">0</span>
+                                            style="background-color:#EE3567 ">0</span>
                                         <!--<span class="text-white nav-box-text d-none d-xl-block opacity-100">Compare</span>-->
                                     </span>
                                 </a>
@@ -542,10 +584,10 @@
                             <div class="" id="wishlist">
                                 <a href="https://sobkisubazar.com/wishlists"
                                     class="d-flex align-items-center text-reset">
-                                    <i class="la la-heart-o la-2x opacity-80 text-white"></i>
+                                    <i class="fa-regular fa-heart fa-2x opacity-80"></i>
                                     <span class="flex-grow-1 ml-1">
                                         <span class="badge badge-primary  badge-inline badge-pill"
-                                            style="background-color:#F16722 !important;">0</span>
+                                            style="background-color:#EE3567 !important;">0</span>
                                         <!--<span class="text-white nav-box-text d-none d-xl-block opacity-100">Wishlist</span>-->
                                     </span>
                                 </a>
@@ -556,10 +598,11 @@
                             <div class="nav-cart-box dropdown h-100" id="cart_items">
                                 <a href="javascript:void(0)" class="d-flex align-items-center text-reset h-100"
                                     data-toggle="dropdown" data-display="static">
-                                    <i class="la la-shopping-cart la-2x opacity-80 text-white"></i>
+                                    <i class="fa-solid fa-cart-shopping fa-2x opacity-50"></i>
+                                    {{--  <i class="fa-sharp fa-solid fa-cart-shopping fa-2x opacity-80"></i>  --}}
                                     <span class="flex-grow-1 ml-1">
                                         <span class="badge badge-primary badge-inline badge-pill cart-count"
-                                            style="background-color:#F16722 ">0</span>
+                                            style="background-color:#EE3567 ">0</span>
                                         <!--<span class="text-white nav-box-text d-none d-xl-block opacity-100">Cart</span>-->
                                     </span>
                                 </a>
@@ -586,7 +629,7 @@
 
                                     <a href="https://sobkisubazar.com/customer_products/create">
                                         <button
-                                            style="color:#fff;background-color:#F16722 !important;border:0px;border-radius:20px;"
+                                            style="color:#fff;background-color:#EE3567 !important;border:0px;border-radius:20px;"
                                             type="button" class="btn btn-warning btn-rounded">Post Your Ads</button>
                                     </a>
 
@@ -599,11 +642,12 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white border-top border-gray-200 py-1" style="background-color:#f16722 !important;">
-                <div class="container">
+            <div class="">
+            {{--  <div class="bg-white border-top border-gray-200 py-1" style="background-color:#562E87 !important;">  --}}
+                <div class="container bg-white border-top border-gray-200 py-1">
                     <ul class="list-inline mb-0 pl-0 mobile-hor-swipe text-center">
                         <li class="list-inline-item mr-0">
-                            <a style="color:#FFFFFF !important;opacity:10 !important;"
+                            <a style="color:#000 !important;opacity:10 !important;"
                                 href="https://sobkisubazar.com/"
                                 class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                                 Home
@@ -611,7 +655,7 @@
                         </li>
 
                         <li class="list-inline-item mr-0">
-                            <a style="color:#FFFFFF !important;opacity:10 !important;"
+                            <a style="color:#000 !important;opacity:10 !important;"
                                 href="https://sobkisubazar.com/aboutus"
                                 class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                                 About Us
@@ -619,7 +663,7 @@
                         </li>
 
                         <li class="list-inline-item mr-0">
-                            <a style="color:#FFFFFF !important;opacity:10 !important;"
+                            <a style="color:#000 !important;opacity:10 !important;"
                                 href="https://sobkisubazar.com/"
                                 class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                                 Our Sale Center
@@ -627,7 +671,7 @@
                         </li>
 
                         <li class="list-inline-item mr-0">
-                            <a style="color:#FFFFFF !important;opacity:10 !important;"
+                            <a style="color:#000 !important;opacity:10 !important;"
                                 href="https://www.sobkisubazar.com/customer-products"
                                 class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                                 All Ads
@@ -635,7 +679,7 @@
                         </li>
 
                         <li class="list-inline-item mr-0">
-                            <a style="color:#FFFFFF !important;opacity:10 !important;"
+                            <a style="color:#000 !important;opacity:10 !important;"
                                 href="https://sobkisubazar.com/categories"
                                 class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                                 Today&#039;s Deals
@@ -643,7 +687,7 @@
                         </li>
 
                         <li class="list-inline-item mr-0">
-                            <a style="color:#FFFFFF !important;opacity:10 !important;"
+                            <a style="color:#000 !important;opacity:10 !important;"
                                 href="https://sobkisubazar.com/contactus"
                                 class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                                 Customer Care
@@ -651,7 +695,7 @@
                         </li>
 
                         <li class="list-inline-item mr-0">
-                            <a style="color:#FFFFFF !important;opacity:10 !important;"
+                            <a style="color:#000 !important;opacity:10 !important;"
                                 href="https://sobkisubazar.com/"
                                 class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                                 Shipping &amp; Delivery Location
@@ -659,7 +703,7 @@
                         </li>
 
                         <li class="list-inline-item mr-0">
-                            <a style="color:#FFFFFF !important;opacity:10 !important;"
+                            <a style="color:#000 !important;opacity:10 !important;"
                                 href="https://sobkisubazar.com/blog"
                                 class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                                 Our Blogs
@@ -667,7 +711,7 @@
                         </li>
 
                         <li class="list-inline-item mr-0">
-                            <a style="color:#FFFFFF !important;opacity:10 !important;"
+                            <a style="color:#000 !important;opacity:10 !important;"
                                 href="https://sobkisubazar.com/track-your-order"
                                 class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                                 Track Your Order
@@ -675,14 +719,14 @@
                         </li>
 
                         <li class="list-inline-item mr-0">
-                            <a style="color:#FFFFFF !important;opacity:10 !important;" href=""
+                            <a style="color:#000 !important;opacity:10 !important;" href=""
                                 class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                                 Gift Voucher
                             </a>
                         </li>
 
                         <!--<li class="list-inline-item mr-0">-->
-                        <!--     <a style="color:#FFFFFF !important;opacity:10 !important;" href="https://sobkisubazar.com/customer_products/create" class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">-->
+                        <!--     <a style="color:#000 !important;opacity:10 !important;" href="https://sobkisubazar.com/customer_products/create" class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">-->
                         <!--       <i class="fas fa-upload"></i>-->
                         <!--     </a>-->
                         <!-- </li>-->
@@ -693,7 +737,7 @@
 
 
 
-        <div class="container-fluid">
+        <div class="container">
             <div class="row position-relative mt-3 mb-3">
                 <div class="col-lg-2 position-static d-none d-lg-block">
                     <div class="aiz-category-menu bg-white rounded  shadow-sm">
@@ -721,7 +765,7 @@
                                     background-color: #149777;
                                 }
                             </style>
-                            @foreach ($categories as $category)
+                            {{--  @foreach ($categories as $category)
                             <li class="category-nav-element" data-id="176">
                                 <a href="https://sobkisubazar.com/category/tea-coffee"
                                     class="text-truncate text-reset py-1 px-3 d-block">
@@ -738,9 +782,25 @@
                                     </div>
                                 </div>
                             </li>
-                            @endforeach
+                            @endforeach  --}}
+                            <li class="category-nav-element" data-id="176">
+                                <a href="https://sobkisubazar.com/category/tea-coffee"
+                                    class="text-truncate text-reset py-1 px-3 d-block">
+                                    <img class="cat-image lazyload mr-2 opacity-60 "
+                                        src="https://sobkisubazar.com/public/assets/img/placeholder.jpg"
+                                        data-src="https://sobkisubazar.com/public/uploads/all/XSSGoucA3K8QARQwWOrdv7wUOxoDHsnYnyHvQoiV.jpg"
+                                        width="16" alt="Fashion &amp; Lifestyle"
+                                        onerror="this.onerror=null;this.src='https://sobkisubazar.com/public/assets/img/placeholder.jpg';">
+                                    <span class="cat-name hova">Fashion &amp; Lifestyle</span>
+                                </a>
+                                <div class="sub-cat-menu2 c-scrollbar-light rounded shadow-lg p-4">
+                                    <div class="c-preloader text-center absolute-center">
+                                        <i class="las la-spinner la-spin la-3x opacity-70"></i>
+                                    </div>
+                                </div>
+                            </li>
 
-                            {{--  <li class="category-nav-element" data-id="177">
+                            <li class="category-nav-element" data-id="177">
                                 <a href="https://sobkisubazar.com/category/seasonal-fruits-qvzcl"
                                     class="text-truncate text-reset py-1 px-3 d-block">
                                     <img class="cat-image lazyload mr-2 opacity-60 "
@@ -958,7 +1018,7 @@
                                         <i class="las la-spinner la-spin la-3x opacity-70"></i>
                                     </div>
                                 </div>
-                            </li>  --}}
+                            </li>
                         </ul>
 
 
@@ -1090,7 +1150,7 @@
         </div>
 
 
-        <div class="mb-4">
+        {{--  <div class="mb-4">
             <div class="container">
 
 
@@ -1272,7 +1332,7 @@
 
 
             </div>
-        </div>
+        </div>  --}}
 
 
 
@@ -3612,7 +3672,7 @@
             }
         </style>
 
-        <section class="bg-white border-top mt-auto" style="background-color:#149777 !important">
+        <section class="bg-white mt-auto" style="background-color:#149777 !important">
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-lg-4">
@@ -4008,6 +4068,7 @@
 
     <!-- SCRIPTS -->
     <script src="https://sobkisubazar.com/public/assets/js/vendors.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js" integrity="sha512-j3gF1rYV2kvAKJ0Jo5CdgLgSYS7QYmBVVUjduXdoeBkc4NFV4aSRTi+Rodkiy9ht7ZYEwF+s09S43Z1Y+ujUkA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://sobkisubazar.com/public/assets/js/aiz-core.js"></script>
 
 

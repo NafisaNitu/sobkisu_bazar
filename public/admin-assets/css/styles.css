@@ -8,10 +8,10 @@
     Version: 1.0
 
 ----------------------------------------------
-    
+
     CSS INDEX
     ===================
-  
+
     1. Core Css
     2. Dashboard One
         2.1 Sidebar Menu
@@ -54,6 +54,9 @@
 
 /*------------------------- 1. Core Css -------------------*/
 
+.border-right-top-header{
+    border-right: 1px solid red!important;
+}
 .page-container {
     width: 100%;
     height: 100%;
@@ -290,6 +293,9 @@
 .horizontal-menu ul li:hover>a,
 .horizontal-menu ul li.active>a {
     color: #007BFF;
+}
+.top-navbar{
+    background-color: black;
 }
 
 .horizontal-menu nav>ul>li:first-child>a {
