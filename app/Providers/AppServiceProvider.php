@@ -36,7 +36,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('*', function($view){
+        View::composer(['backend.pages.sub_category.*','home.index'], function($view){
            $view->with('categories', ModelsCategory::all());
         });
     }
